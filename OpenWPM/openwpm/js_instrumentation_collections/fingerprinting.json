@@ -1,0 +1,57 @@
+[
+    "AnalyserNode",
+    "OfflineAudioContext",
+    "AudioContext",
+    "AudioBuffer",
+    "RTCPeerConnection",
+    "HTMLCanvasElement",
+    "Storage",
+    "window.navigator",
+    "window.Intl",
+    "WebGLRenderingContext",
+    "WebGL2RenderingContext",
+    "CSSStyleDeclaration",
+    {"CanvasRenderingContext2D": {
+        "excludedProperties": [
+            "quadraticCurveTo",
+            "lineTo",
+            "transform",
+            "globalAlpha",
+            "moveTo",
+            "drawImage",
+            "setTransform",
+            "clearRect",
+            "closePath",
+            "beginPath",
+            "canvas",
+            "translate"
+        ]
+    }},
+    {"window": {
+        "propertiesToInstrument": [
+            "name",
+            "localStorage",
+            "sessionStorage",
+            "devicePixelRatio",
+            "indexedDB",
+            "openDatabase",
+            "matchMedia",
+            "history",
+            "performance",
+            "crypto"
+        ]
+    }},
+    {"window.document": {
+        "propertiesToInstrument": ["cookie", "referrer"],
+        "logCallStack": true
+    }},
+    {"window.screen": {
+        "propertiesToInstrument": ["pixelDepth", "colorDepth"]
+    }},
+    {"window.document.fonts": {
+        "propertiesToInstrument": ["check"]
+    }},
+    {"window.Notification": {
+        "propertiesToInstrument": ["permission"]
+    }}
+]
