@@ -27,3 +27,14 @@ The following trackers have been considered:
   - Session.
   - Host only.
   - Secure. With both the Secure and HTTP only attributes.
+
+# Warning
+
+If you clone the repository directly, you must consider that the `Results` directory has a size of ~2.9 GiB. So, if you are not planning on using its content, please do the following to clone only the other directories and this README:
+
+```sh
+git clone -n --depth=1 --filter=tree:0 https://github.com/fernandojavier-almenaras-um-es/OpenWPM-Web-Analysis.git
+cd OpenWPM-Web-Analysis
+git sparse-checkout set OpenWPM OpenWPM-Data-Analytics Tranco README.md
+git checkout
+```
