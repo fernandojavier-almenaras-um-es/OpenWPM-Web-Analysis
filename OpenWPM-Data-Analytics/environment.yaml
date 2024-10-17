@@ -1,0 +1,18 @@
+name: openwpmdata
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python >=3.11.0,<3.12
+  - plyvel >=1.5.0,<2
+  - nodejs >=18.12.1,<19
+  - ipykernel >=6.21.1
+  - SQLAlchemy >=2.0.4,<3
+  - sqlite >=3.40.1,<4
+  - pyright >=1.1.295
+  - pandas >=1.5.3
+  - pandas-stubs >=1.5.3.230214
+  - pip :
+    # Package that is only on PyPI (or need PyPI version)
+    - ipython-sql >=0.5.0
+  

@@ -1,0 +1,44 @@
+from .static_analyzers.canvas_1m_static import Canvas_1M_Static
+from .static_analyzers.canvas_basic_static import Canvas_Basic_Static
+from .static_analyzers.canvas_basic_static_2 import Canvas_Basic_Static_2
+from .static_analyzers.canvas_font_1m_static import Canvas_Font_1M_Static
+from .static_analyzers.media_queries_static import Media_Queries_Static
+from .static_analyzers.navigator_properties_static import Navigator_Properties_Static
+from .static_analyzers.webgl_static import WebGL_Static
+from .static_analyzers.webrtc_1m_static import WebRTC_1M_Static
+
+
+from .dynamic_analyzers.canvas_1m_dynamic_nd import Canvas1MDynamicND
+from .dynamic_analyzers.canvas_1m_dynamic import Canvas_1M_Dynamic
+from .dynamic_analyzers.canvas_basic_dynamic import Canvas_Basic_Dynamic
+from .dynamic_analyzers.canvas_font_1m_dynamic import Canvas_Font_1M_Dynamic
+from .dynamic_analyzers.media_queries_dynamic import Media_Queries_Dynamic
+from .dynamic_analyzers.navigator_properties_dynamic import Navigator_Properties_Dynamic
+from .dynamic_analyzers.webgl_dynamic import WebGL_Dynamic
+from .dynamic_analyzers.webrtc_1m_dynamic import WebRTC_1M_Dynamic
+
+
+from .custom_analyzers.audio_dynamic import AudioContext
+from .custom_analyzers.canvas_dynamic import Canvas
+from .custom_analyzers.canvasfont_dynamic import CanvasFont
+from .custom_analyzers.jsenum_dynamic import JSEnum
+from .custom_analyzers.webgl_dynamic import WebGL
+from .custom_analyzers.webrtc_dynamic import WebRTC
+
+from .custom_analyzers.ga_static_requests import GoogleAnalytics
+from .custom_analyzers.mp_static_requests import MetaPixel
+from .custom_analyzers.muet_static_requests import MicrosoftUET
+from .custom_analyzers.hotjar_static_requests import Hotjar
+
+from .custom_analyzers.cookie_first_dynamic import CookieFirstPartyTotal
+from .custom_analyzers.cookie_first_secure_dynamic import CookieFirstPartySecure
+from .custom_analyzers.cookie_third_secure_dynamic import CookieThirdPartySecure
+from .custom_analyzers.cookie_first_host_dynamic import CookieFirstPartyHost
+from .custom_analyzers.cookie_third_dynamic import CookieThirdPartyTotal
+from .custom_analyzers.cookie_third_host_dynamic import CookieThirdPartyHost
+from .custom_analyzers.cookie_first_session_dynamic import CookieFirstPartySession
+from .custom_analyzers.cookie_third_session_dynamic import CookieThirdPartySession
+
+from .custom_analyzers.localstorage_dynamic import LocalStorage
+from .custom_analyzers.sessionstorage_dynamic import SessionStorage
+from .custom_analyzers.indexeddb_dynamic import IndexedDB
