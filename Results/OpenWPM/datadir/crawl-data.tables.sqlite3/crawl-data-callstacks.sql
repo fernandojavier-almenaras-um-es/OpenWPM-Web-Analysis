@@ -1,0 +1,10 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE callstacks(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  request_id INTEGER NOT NULL,
+  browser_id INTEGER NOT NULL,
+  visit_id INTEGER NOT NULL,
+  call_stack TEXT
+);
+COMMIT;
